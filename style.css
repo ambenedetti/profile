@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400,700|Ubuntu+Mono:400i,700&display=swap');
+
+.container{
+  width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+body {
+  background-image: url("images/background_transparent.png");
+  background-size: cover;
+  color: #bbb;
+  font-family: Nanum Gothic Coding, sans-serif;
+  font-size: 15px;
+  line-height: 10px;
+}
+
+h1, h2 {
+  color: #fff;
+  font-family: Ubuntu Mono, sans-serif;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+p {
+  padding: 10px;
+  margin-top: 5px;
+  line-height: 20px;
+}
+
+a {
+  color: #43C163;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  display: inline;
+  font-size: 30px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.img-circle{
+  border-radius: 50%;
+  width: 100px;
+}
+
+.card{
+background-color: rgba(0, 0, 0, 0.5);
+padding: 20px;
+margin: 10px;
+text-align: center;
+border: 3px solid #EEE;
+box-shadow: 2px 2px 3px #444;
+}
+
+
+.button{
+  background-color: #43C163;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5%;
+  border: 1px solid #fff;
+}
+
+.typewriter {
+  font-family: Ubuntu Mono, sans-serif;
+  display: inline-block;
+}
+
+.typewriter-text {
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 4px solid orange;
+    line-height: 30px;
+}
+
+@keyframes typing {
+    from {
+        width: 0%
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
